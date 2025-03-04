@@ -424,11 +424,6 @@ data.forEach(function(item) {
     let remove_button = document.createElement("button")
     remove_button.textContent = " Жою"
     cart.appendChild(remove_button)
-    cart.addEventListener("click", function() {
-        let img = document.createElement("img")
-        img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMBxuqbYYfg_XYJ3eLBl1oH54zQSKwQtySg&s"
-        cart.appendChild(img)
-    })
     search.addEventListener("click", function() {
         if (title.textContent.includes(search_value.value) || description.textContent.includes(search_value.value)) {
             cart.style.display = "block";
